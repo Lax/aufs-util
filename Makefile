@@ -87,7 +87,7 @@ aufs.5: aufs.in.5 c2tmac
 c2sh c2tmac ver: CC = ${HOSTCC}
 .INTERMEDIATE: c2sh c2tmac ver
 
-Install = install -o root -g root -p
+Install = install -p
 install_sbin: File = auibusy auplink mount.aufs umount.aufs
 install_sbin: Tgt = ${DESTDIR}/sbin
 install_ubin: File = aubusy auchk aubrsync #auctl
